@@ -1,0 +1,473 @@
+/* generell settings */
+body {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: #030303;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Navbar */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom-style: solid;
+  border-bottom-color: #474749;
+  background-color: #1A1A1B;
+}
+
+.dropdown-menu {
+  background-color: #1A1A1B;
+}
+
+.navbar-brand {
+  height: 130%;
+  width: 130%;
+}
+/* Navbar Ende */
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 100%;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  /* background-color: #f1f1f1; */
+  height: 100%;
+}
+
+.middlenav {
+  margin: 0.8em 0 0.8em 0;
+  padding-bottom: 2.5em;
+  height: 100%;
+  background-color: #1A1A1B;
+  border-style: solid;
+  border-color: #474749;
+  border-width: 0.1em;
+}
+
+/* error messages index */
+.errorMsg {
+  text-align: center;
+  width: auto;
+  margin: 1em;
+  border-style: solid;
+  border-color: #474749;
+  border-width: 0.1em;
+}
+
+/* profil bilder */
+.pfp {
+  width: 100%;
+  height: auto;
+}
+
+.login-content, .form {
+  margin: 1em;
+}
+
+.login-content input, 
+.form-content input, 
+.moinMeister input, 
+.textarea textarea, 
+.textarea input {
+  background-color: #1A1A1B;
+  border-style: solid;
+  border-color: #474749;
+  padding: 0.7em;
+  margin: 1em 0 1em 0;
+}
+
+.select select {
+  background-color: #1A1A1B;
+  margin-right: 1em;
+}
+
+.form-content #male, 
+.form-content #female {
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+.form .login {
+  margin-top: 1.5em;
+}
+
+.moinMeister {
+  margin-top: 1em;
+}
+
+.textarea textarea, .textarea input{
+  width: 90%;
+  height: auto;
+}
+
+/* profile page */
+.profileh3, 
+.profileData {
+  color: rgb(144, 144, 144);
+}
+
+.profileh3 {
+  margin-bottom: 2em;
+}
+
+.profileh4 {
+  margin-left: 8%;
+}
+
+.profileData{
+  margin-left: 10%;
+  margin-top: 6px;
+}
+
+.posth4 {
+  color: rgb(144, 144, 144);
+}
+
+/* posts */
+.TopPost h4,
+.TopPost h3 {
+  color: rgb(144, 144, 144);
+}
+
+.sortbuttons a{
+  color: rgb(216, 216, 216);  
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+}
+
+.sortbuttons {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-style: solid;
+  border-color: #474749;
+  border-width: 0.1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.userDetails .username, 
+.userDetails .rolle, 
+.userDetails .user_time, 
+.userDetails .freigabe, 
+.userDetails .tag {
+
+  padding-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+.cmt {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#commentSec{
+  background-color: #1A1A1B;
+  border-style: solid;
+  border-color: #474749;
+  padding: 0.7em;
+  margin: 1em 0 1em 0;
+}
+
+.postedit input, .postedit textarea {
+  background-color: #1A1A1B;
+  border-style: solid;
+  border-color: #474749;
+  padding: 0.7em;
+  margin: 1em 0 1em 0;
+}
+
+.postedit select {
+  background-color: #1A1A1B;
+  margin-right: 1em;
+  height: 2em;
+}
+
+#buttonPostEdit {
+  width: 8em;
+  margin-right: 2em;
+}
+
+.showAllPosts {
+  margin-top: 2em;
+  border-bottom-style: solid;
+  border-bottom-color: #474749;
+}
+
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #1A1A1B;
+  color: white;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+footer p {
+  margin-top: 1em;
+}
+
+footer a{
+  color: white;
+}
+
+/* buttons */
+.button {
+  border-radius: 16px;
+  background-color: #474749;
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.85);
+  border-width: 0.1em;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Modal Box, Profile Page */
+/* body {font-family: Arial, Helvetica, sans-serif;} */
+
+/* The Modal (background) */
+.modal1, .modal2, .modal3, .modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #1A1A1B;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content p {
+  margin-left: 1.1em;
+}
+
+/* The Close Button */
+.close1, .close2, .close3, .close4 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,.close1:focus, 
+.close2:hover,.close2:focus, 
+.close3:hover,.close3:focus,
+.close4:hover,.close4:focus {
+  color:rgba(255, 2, 2, 0.424);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#SettingPfp{
+  display: inline;
+}
+
+#PostImg{
+  width: 100%; 
+  height: auto;
+}
+
+#comment{
+  width: 140px;
+}
+
+.search input {
+  background-color: #1A1A1B;
+  border-style: solid;
+  border-color: #474749;
+  padding: 0.7em;
+  margin: 1em 0 1em 0;
+}
+
+.search select {
+  background-color: #1A1A1B;
+  margin-right: 1em;
+  height: 3.1em;
+}
+
+.searchArea {
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+}
+
+.gif {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.buttonComment {
+  width: 8em;
+}
+
+/*
+.show_everything{
+    margin-top: 1%;
+
+    border-style: solid;
+    border-radius: 1px;
+    border-color: rgba(85, 85, 85, 0.199);
+    border-radius: 10px;
+}
+
+.show_everything:hover{
+    border-color: rgb(85, 85, 85);
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+.show_img{
+    border-radius: 10px;
+
+    width: 20em;
+    height: 20em;
+
+    display: inline;
+}
+
+.comment{
+    margin: 0;
+
+    display: inline;
+}
+
+.UpVote, .DownVote{
+    width: 3em;
+    height: 3em;
+}
+
+.vote{
+    display: inline;
+    margin-left: 7%;
+}
+
+.comment{
+    display: inline;
+}
+
+.pfp{
+    width: 100px;
+    height: 100px;
+
+    margin: 10px;
+
+
+}
+
+.text-right{
+    text-align: right;
+}
+
+hr{
+    margin-top: 0;
+}
+
+.username{
+    text-align: center;
+    color: red;
+}
+
+.rolle{
+    text-align: center;
+    color: red;
+}
+
+.user_time{
+    text-align: center;
+    color: red;
+}
+
+.comment_btn{
+    text-align: center;
+    color: red;
+}
+
+.userDetails{
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+.top_timestamp{
+    display: inline;
+}
+
+.tag{
+    text-align: center;
+}
+
+.post-info {
+    margin: 10px auto 0px;
+    padding: 5px;
+  }
+
+.fa {
+  font-size: 1.2em;
+}
+.fa-thumbs-down, .fa-thumbs-o-down {
+  transform:rotateY(180deg);
+}
+.logged_in_user {
+  padding: 10px 30px 0px;
+}
+i {
+  color: blue;
+*/

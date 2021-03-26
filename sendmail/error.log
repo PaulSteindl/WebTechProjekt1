@@ -1,0 +1,11 @@
+21/01/25 16:46:37 : Username and Password not accepted. Learn more at<EOL> https://support.google.com/mail/?p=BadCredentials s18sm10997259edw.66 - gsmtp<EOL>
+21/01/25 16:48:04 : Username and Password not accepted. Learn more at<EOL> https://support.google.com/mail/?p=BadCredentials q2sm10709965edn.91 - gsmtp<EOL>
+21/01/25 17:48:45 : Message is missing recipient's address
+21/01/25 17:49:16 : Message is missing recipient's address
+21/01/25 17:49:22 : Message is missing recipient's address
+21/01/25 17:49:27 : Message is missing recipient's address
+21/01/25 17:49:32 : Message is missing recipient's address
+21/01/25 17:50:06 : Message is missing recipient's address
+21/01/25 17:50:09 : Message is missing recipient's address
+21/01/25 17:50:25 : Message is missing recipient's address
+21/01/25 17:53:30 : The recipient address <$mailRecipient@> is not a valid RFC-5321<EOL>address. bc6sm10976158edb.52 - gsmtp<EOL>
